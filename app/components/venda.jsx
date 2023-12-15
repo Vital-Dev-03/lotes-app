@@ -53,7 +53,6 @@ export default function Home() {
         console.log("Data de Previsão:", dataPrevisao);
         console.log("Valor Total do Pedido:", valorTotalPedido);
 
-        // Extraindo produtos do campo "det"
         const produtos = pedidoVendaProduto.det;
 
         const rows = produtos.map((produto, index) => (
@@ -101,7 +100,6 @@ export default function Home() {
     console.log(fornecedorData);
   }
 
-  // Função para lidar com a mudança do checkbox
   function handleCheckboxChange(productIndex) {
     setSelectedItem(productIndex);
 
